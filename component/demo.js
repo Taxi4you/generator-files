@@ -10,5 +10,5 @@ app.directive("demo", () => {
 
 function demo(scope, element, attrs) {
   
-  // demo component closure
+  // demo controller closure
 }
