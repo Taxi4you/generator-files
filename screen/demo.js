@@ -13,6 +13,7 @@ app.controller("demo", ($scope, $location) => {
       $scope.screenInit();
     else
      $location.path("/register");
+    $scope.$apply();
   });
 
   $scope.screenInit = function() {
