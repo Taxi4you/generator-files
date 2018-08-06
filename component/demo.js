@@ -10,5 +10,7 @@ app.directive("demo", () => {
 
 function demo(scope, element, attrs) {
   
+  $scope = scope;
+  
   // demo controller closure
 }
