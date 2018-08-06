@@ -9,7 +9,7 @@ app.config(($routeProvider, $locationProvider) => {
 app.controller("demo", ($scope, $location) => {
 
   $scope.init().then(function() {
-    if ($scope.main.by.userType!="guest")
+    if ($scope.main.by.type!="guest")
       $scope.screenInit();
     else
      $location.path("/register");
