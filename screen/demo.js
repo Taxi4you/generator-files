@@ -6,13 +6,13 @@ app.config(($routeProvider, $locationProvider) => {
   // $locationProvider.html5Mode(true);
 });
 
-app.controller("demo", ($scope, $location) => {
+app.controller("demo", ($rootScope, $scope, $location, $routeParams) => {
 
   $scope.init().then(function() {
-    if ($scope.main.userInfo.type!="guest")
+    if ($scope.user.type!="guest")
       $scope.screenInit();
     else
-     $location.path("/register");
+     $location.path("/login");
     $scope.$apply();
   });
 
