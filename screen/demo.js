@@ -12,7 +12,7 @@ app.controller("demo", ($rootScope, $scope, $location, $routeParams) => {
     if ($scope.user.type!="guest")
       $scope.screenInit();
     else
-     $location.path("/login");
+     $location.path("/auth/login");
     $scope.$apply();
   });
 
