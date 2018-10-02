@@ -1,4 +1,4 @@
-app.config(($routeProvider, $locationProvider) => {
+app.config(function($routeProvider, $locationProvider) {
   $routeProvider
   .when("/linkToPath", {
     templateUrl : "templateUrlPath"
