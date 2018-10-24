@@ -8,8 +8,8 @@ app.config(function($routeProvider, $locationProvider) {
 
 app.controller("demo", ($rootScope, $scope, $location, $routeParams) => {
 
-  $scope.init().then(function() {
-    if ($scope.user.type!="guest")
+  $rootScope.init().then(function() {
+    if ($rootScope.user.type!="guest")
       $scope.screenInit();
     else
      $location.path("/auth/login");
