@@ -1,17 +1,6 @@
-<screen ng-controller="demo">
-  <wrapper ng-if="initialized">
-    <header-component></header-component>
-    <div class="app-body">
-      <sidebar-component></sidebar-component>
-      <main class="main-content">
-        <page-title-component></page-title-component>
-        <div class="container-fluid">
+<div ng-controller="demo">
+  <page-title-component title="{{$root.t['Demo']}}"></page-title-component>
+  <div class="container-fluid">
 
-
-
-        </div>
-      </main>
-      <aside-component></aside-component>
-    </div>
-  </wrapper>
-</screen>
+  </div>
+</div>
